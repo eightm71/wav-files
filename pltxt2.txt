@@ -1,0 +1,63 @@
+
+this is the second file
+
+"
+
+
+ $ff=$ARGV[0];
+
+
+ open ff; @b=<ff>; close ff;
+
+$out = $ff."m.wav";
+
+open   (OUTBIN, '>',"$out") || die "unable to open $out";
+binmode(OUTBIN) ;
+
+$x="x300";
+
+open(INBIN, "<x300") || die "unable to open $x";  
+binmode(INBIN)     || die "unable to set binmode $x";
+$j=0;
+
+while (read(INBIN, $buff, 2))
+  {   print OUTBIN   $buff if $j++<101; }
+
+
+
+$rt=@b+0;
+
+$i=374.009;
+
+for$w(1..4){
+
+$i=$i+7.008;
+
+$w1=substr(log(2.007+$i),8,1);
+$w2=substr(log(2.3007+$i),11,1);
+for($i=0;$i<$rt; $i=$i+1+$w1)
+{
+
+for(0..$w2){ 
+push @new, $b[$i];
+push @new, $b[$i];
+push @new, $b[$i];
+
+}
+
+}
+
+}
+
+
+for$j(@new) { $n=pack 's',$j;  print OUTBIN $n }
+ 
+
+
+close(INBIN) || die "unable to close inbin"; 
+close(OUTBIN) || die "unable to close outbin";
+
+
+"
+
+end of perl program
