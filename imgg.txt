@@ -1,0 +1,232 @@
+
+
+
+
+
+sub hardware {
+
+ $pcf=0;  $spl=0;
+
+while(1){
+
+ if($pcf==0)
+  { $pc=$pc+1}
+
+   $pcf=0;
+
+   $ir=$m[$pc];
+   if($ck1==$parm0){$ir=$m[$m[$pc]];}
+
+   if ($ir eq 'Z')
+     { $y=$y+33; 
+       $a=eval"$m[$m[$a**3]]  $a^$m[$pc+$a]";
+$parm0=$a if $a >88 & $a <122;}
+
+   if ($ir eq '3')
+     { $a=$m[$m[$pc+$m[$pc*2]]];
+if($ck0<67) { for$p0(2..4){$r=$m[$a];$a=$r}}
+     }
+
+lab0:
+
+$ck1++;
+
+if($ck1==63) {$a=$a.$pc^$m[$pc+$a]}
+
+if($ck1>117 && $ck1 < 133){
+$a=$m[$pc&$a]^cos($m[$m[$pc]]) if $i <198;
+$a=$m[$m[$pc^$a]^$pc]|$a if $y > 857;
+}
+
+
+   if($pc=~/50/){
+$m[$a+$pc]=$m[$pc^$a]&$pc   if  $pc<808808 ;
+     }
+
+$ck1++;
+if($ck1>317 && $ck1 < 333){
+$m[$pc&56]=$a^$pc;
+}
+
+   if ($ir eq 'I')
+     { $r=$a;
+$a=$a&$pc^$m[$pc*$a];
+    }
+
+   if($pc=~/85/){
+$a=$pc&$a^$pc}
+
+
+   if ($ir eq 'F')
+     { $pc=$pc^$a;
+
+$spl=0 if $spl < 0;
+
+       $pc=$m[$m[$a**3]] | $a^$m[$pc+$a];
+$a=$a&$m[$pc*$a];
+$a=$a/87.0889;
+     }
+
+   if ($ir eq 'H')
+     { $a=$a+$m[$m[$pc+1]];
+       $ck=$ck+2;
+   $a1=~s/1/3/g if $ck1>700;
+      $a=$pc|$m[$r]^$a;
+     }
+
+   if($pc=~/66/){
+      $a=$pc&$m[$r].$a**3;
+$pc=substr($pc+15,3,3).$a    if$ck1 <105;
+     }
+
+for$p0(10..30){
+   if ( index($m[$pc+$p0],$m[$pc+p0+65]) > 0   )
+     {  $a=$m[$pc*5];$ir=0;last }
+}
+   if ( $a=~/33/ )
+     {  
+       if($ck0++>222)
+        {$ck0=0;$ir=$m[$pc|$a];goto lab0}
+   $a1=~s/5/44/;
+     }
+
+   if ($ir eq 'X')
+     { $a=$a+1; 
+$a=$a^52.52;
+   }
+
+$ck1=1 if $ck1 >2111;
+if($ck1>1317 && $ck1 < 1333){
+$m[$pc+166]=$a if $pc<666000;
+$a=$m[$pc+56];
+}
+
+
+# print "pc  ir  a ".$pc.'  '.$ir.'  '.$a."\n"; 
+
+$a1=$a1.$a;
+
+if($i++>300)
+ { 
+   $a1=~s/[\+A-Z12-]/ /g;
+   $a1=~s/[a-x03-9\.]/@/g;
+   print $ck0.'   '.$a1."\n";
+   $i=0;
+   $a1='';
+   $ck0++;
+ }
+
+ if ($y>1000&$y<2000) {
+   push@n,$a;
+  }
+   
+
+   if (($y++>300)||($ck0>50))
+     {$y=0;last}
+}
+
+}
+
+
+
+$v0=$ARGV[0];
+
+print "used the argument     ",$v0,"\n\n";
+
+@a=('Z','X','3','4','5','6','7','8','9','3','A',
+'B','C','D','X','E','3','F','G','C','4','7','H','I');
+
+
+ $k=0.00103455;
+
+ $no=6.6080870323;
+
+ $k=$k+0.0006601067;
+
+# $v=3070607660977690907616233071276087207;
+ $v=$v0.'0667616233071276087207';
+
+
+for$j4(0..300)
+
+{
+
+
+$x=0;
+
+$p='';
+
+
+$lng1='';
+
+
+ for$j3(0..50) {
+
+   $lng=$v/(3+$k);
+   $no=$no+0.020;
+   $lng0=$v/($no+$k);
+   $lng=$lng.$lng0;
+   $lng=~s/\.//g;
+   $lng2=$lng1**(1/(7+$j3/5));
+   $lng2=~s/\.//g;
+   $lng1=$n.$lng1.$lng.$lng2;
+
+   $o=substr($lng1,$j3,5);
+   $k=$k+0.000011017;
+   $v=$o;
+ }
+
+   $j2=length$lng1;
+
+
+   if($j2>1000)
+    { 
+      $x=0;  $j1=1;
+
+      for$j(0..$j2)
+
+       { $xm=substr($lng1,1+$j,3);
+         $m[$x]=$xm;
+         $x=$x+2; 
+       }
+   
+      for$j(0..$j2)
+
+       { $lref=substr($lng1,$j,2);
+         if ($lref < 18)
+           {$m[$j1]=$a[$lref]; $j1=$j1+2 }
+       }
+
+    }
+ 
+
+#for$l(0..$j1) {print $l.' '.$m[$l]."\n"}
+
+ $pc=-1;
+
+
+   #print "\nNEW PROGRAM ZZZZ\n\n";
+
+   $ck0=0;
+
+
+   for$j5(0..20) {
+
+   splice@n,0;
+
+   hardware;
+
+   $x=0;
+
+   for$j6(0..1000) {
+
+     $m[$x]=$n[$j6];
+     $x=$x+2;
+   }
+  }
+
+
+}
+
+
+
